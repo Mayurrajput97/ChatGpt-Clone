@@ -11,31 +11,24 @@ class OnboardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
-      body: const Center(
-        child: Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              LogoWidget(),
-              SizedBox(
-                height: 20,
-              ),
-              TitleWidget(text: "Welcome To ChatGPT"),
-              SizedBox(
-                height: 15,
-              ),
-              DescriptionWidget(
-                text:
-                    "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems.",
-              ),
-              Spacer(),
-              Button(),
-              SizedBox(
-                height: 20,
-              )
-            ],
-          ),
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Spacer(),
+            LogoWidget(),
+            SizedBox(height: 20),
+            TitleWidget(text: "Welcome To ChatGPT"),
+            SizedBox(height: 15),
+            DescriptionWidget(
+              text:
+                  "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems.",
+            ),
+            Spacer(),
+            Button(),
+            SizedBox(height: 20),
+          ],
         ),
       ),
     );

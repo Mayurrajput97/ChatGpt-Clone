@@ -1,3 +1,5 @@
+import "package:client/design/app_theme.dart";
+import "package:client/features/chat/pages/chat_page.dart";
 import "package:client/features/onboarding/pages/onboarding_page.dart";
 import "package:flutter/material.dart";
 
@@ -8,8 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: OnboardingPage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.darkTheme,
+      home: const ChatPage(),
     );
   }
 }

@@ -13,7 +13,7 @@ class DescriptionWidget extends StatelessWidget {
     return Text(
       text,
       style: const TextStyle(
-        fontSize: 16,
+        fontSize: 18,
         color: Colors.black,
       ),
       textAlign: TextAlign.center,
